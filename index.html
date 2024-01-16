@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Komektest</title>
+  <link rel="shortcut icon" href="/images/favicon.icon">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="body">
+<div class="wrapper">
+  <header class="header">
+    <div class="header__content">
+      <div class="header__body-wrapper">
+        <div class="header__body">
+          <div class="header__block">
+            <a class="logo" href="index.html">
+              <img src="images/logo-header.svg" alt="logo">
+              komektest
+            </a>
+            <div class="header__socials">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                  <circle cx="13.5" cy="13.5" r="12.5" stroke="#03A5CA"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2469 20.8864H11.4756V14.3514H10.0908V12.0997H11.4756V10.7479C11.4756 8.91105 12.2571 7.81818 14.4789 7.81818H16.3281V10.0707H15.1724C14.3074 10.0707 14.2503 10.3854 14.2503 10.9726L14.2465 12.0997H16.3408L16.0957 14.3514H14.2465V20.8864H14.2469Z" fill="#03A5CA"/>
+                </svg>
+              </a>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                  <circle cx="13.5" cy="13.5" r="12.5" stroke="#03A5CA"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0152 8.12768C19.7819 8.30169 20.4426 8.85906 20.5813 9.62442C20.7553 10.4945 20.9293 11.7125 21 13.2786C20.9647 14.8093 20.7906 16.0627 20.652 16.9327C20.512 17.7334 19.8513 18.2555 19.0859 18.4295C17.8679 18.6728 15.7798 18.8468 13.4823 18.8468C11.1849 18.8468 9.09679 18.6728 7.87874 18.4295C7.11338 18.2555 6.45269 17.6981 6.31267 16.9327C6.13866 16.0627 6 14.8446 6 13.2786C6 11.7125 6.13866 10.4945 6.27868 9.62442C6.41735 8.82371 7.07939 8.30169 7.84475 8.12768C8.99347 7.88434 11.1509 7.71033 13.447 7.71033C15.7444 7.71033 17.8679 7.88434 19.0152 8.12768ZM15.8138 13.2786L11.5682 10.8425V15.7147L15.8138 13.2786Z" fill="#03A5CA"/>
+                </svg>
+              </a>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                  <circle cx="13.5" cy="13.5" r="12.5" stroke="#03A5CA"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.66699 10.9074C7.66699 9.11787 9.1182 7.66666 10.9077 7.66666H16.0929C17.8825 7.66666 19.3337 9.11787 19.3337 10.9074V16.0926C19.3337 17.8821 17.8825 19.3333 16.0929 19.3333H10.9077C9.1182 19.3333 7.66699 17.8821 7.66699 16.0926V10.9074ZM18.0374 9.61111C18.0374 9.25333 17.747 8.96296 17.3892 8.96296C17.0314 8.96296 16.7411 9.25333 16.7411 9.61111C16.7411 9.96889 17.0314 10.2593 17.3892 10.2593C17.747 10.2593 18.0374 9.96889 18.0374 9.61111ZM13.5003 10.2593C15.2899 10.2593 16.7411 11.7105 16.7411 13.5C16.7411 15.2895 15.2899 16.7407 13.5003 16.7407C11.7108 16.7407 10.2596 15.2895 10.2596 13.5C10.2596 11.7105 11.7108 10.2593 13.5003 10.2593ZM11.5559 13.5C11.5559 12.4261 12.4264 11.5556 13.5003 11.5556C14.5742 11.5556 15.4448 12.4261 15.4448 13.5C15.4448 14.5739 14.5742 15.4444 13.5003 15.4444C12.4264 15.4444 11.5559 14.5739 11.5559 13.5Z" fill="#03A5CA"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="header__box">
+            <div class="dropdown">
+              <button class="dropdown__button">РУС</button>
+              <ul class="dropdown__list">
+                <a href="#">Каз</a>
+              </ul>
+              <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+            </div>
+            <div class="header__part">
+              <a class="popup-link" href="#popup">Вход</a>
+              <a class="popup-link" href="#popup-reg">Регистрация</a>
+            </div>
+          </div>
+          <div class="header__burger" id="hamb">
+            <span></span>
+          </div>
+        </div>
+      </div>
+        <div class="header__bottom _container">
+          <nav class="menu" id="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                  <a href="index.html">Главная</a>
+              </li>
+              <li class="menu__list-item">
+                  <a href="#">Вербальные тесты</a>
+              </li>
+              <li class="menu__list-item">
+                  <a href="#">Числовые тесты</a>
+              </li>
+              <li class="menu__list-item">
+                  <a href="#">Логические тесты</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="#">Ситуационные тесты </a>
+              </li>
+              <li class="menu__list-item">
+                  <a href="prices.html">Наши цены</a>
+              </li>
+              <li class="menu__list-item">
+                  <a href="qr.html">Способы оплаты</a>
+              </li>
+              <li class="menu__list-item">
+                  <a href="blog.html">Блог</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="aboutus.html">О нас</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+  </header>
+<main class="main">
+  <section class="homepage">
+    <div class="homepage__content _container">
+      <div class="homepage__info">
+        <h1>KomekTest</h1>
+        <p>Наши оценки талантов проверяют и определяют лучших кандидатов, а также принимают решения о найме быстрее, проще и без предвзятости.</p>
+        <div class="homepage__buttons">
+          <a href="#">Пройти пробный тест</a>
+          <a href="prices.html">Купить пакет</a>
+        </div>
+      </div>
+      <div class="homepage__image">
+        <img src="images/homepage-photo.png" alt="homepage img">
+      </div>
+    </div>
+  </section>
+
+  <section class="komektest _container">
+    <div class="komektest__content">
+      <div class="komektest__photo">
+        <img src="images/komektest-photo.png" alt="komektest photo">
+      </div>
+      <div class="komektest__info">
+        <h2>Что такое KomekTest?</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="numbers _container">
+    <div class="numbers__content">
+      <div class="title">
+        <h2>Цифры</h2>
+      </div>
+      <div class="numbers__items">
+        <div class="numbers__item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1325 3.97466L38.8377 14.6593C40.11 15.5833 40.6417 17.2205 40.1558 18.7147L34.5385 36.003C34.0532 37.4972 32.661 38.509 31.09 38.5092H12.9107C11.3396 38.509 9.94744 37.4972 9.46216 36.003L3.84482 18.7147C3.35905 17.2201 3.89128 15.5827 5.16299 14.6593L19.8682 3.97466C21.1394 3.0506 22.8612 3.0506 24.1325 3.97466Z" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22 23.8334C25.0376 23.8334 27.5 21.3709 27.5 18.3334C27.5 15.2958 25.0376 12.8334 22 12.8334C18.9624 12.8334 16.5 15.2958 16.5 18.3334C16.5 21.3709 18.9624 23.8334 22 23.8334Z" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11 37.9555V36.6667C11 32.6166 14.2832 29.3334 18.3333 29.3334H25.6667C29.7168 29.3334 33 32.6166 33 36.6667V37.9629" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Подзаголовок</h3>
+          <p>Количество <br> юзеров</p>
+          <span>3 402</span>
+          <div class="numbers__item-img">
+            <svg xmlns="http://www.w3.org/2000/svg" width="162" height="189" viewBox="0 0 162 189" fill="none">
+              <g opacity="0.03">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M103.659 17.073L166.824 62.9685C172.289 66.9375 174.573 73.9699 172.486 80.388L148.357 154.649C146.273 161.067 140.292 165.413 133.544 165.414H55.4557C48.7075 165.413 42.7274 161.067 40.6429 154.649L16.5139 80.388C14.4273 73.968 16.7134 66.9347 22.176 62.9685L85.3414 17.073C90.802 13.1037 98.198 13.1037 103.659 17.073Z" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M94.5 102.375C107.548 102.375 118.125 91.7977 118.125 78.75C118.125 65.7023 107.548 55.125 94.5 55.125C81.4523 55.125 70.875 65.7023 70.875 78.75C70.875 91.7977 81.4523 102.375 94.5 102.375Z" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M47.25 163.036V157.5C47.25 140.103 61.353 126 78.75 126H110.25C127.647 126 141.75 140.103 141.75 157.5V163.068" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="numbers__item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M36.4375 11.4949C37.7208 12.2246 38.5092 13.5904 38.5 15.0663V28.4203C38.5 29.9034 37.6878 31.2711 36.377 31.9916L24.002 39.8199C22.7551 40.5045 21.2449 40.5045 19.998 39.8199L7.623 31.9916C6.31669 31.2777 5.50299 29.9089 5.5 28.4203V15.0644C5.5 13.5813 6.31217 12.2154 7.623 11.4949L19.998 4.19827C21.2819 3.49039 22.8391 3.49039 24.123 4.19827L36.498 11.4949H36.4375Z" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21.9997 29.3333V29.3516" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 23.8333C23.6974 23.8384 25.1764 22.6779 25.5751 21.028C25.9738 19.3781 25.188 17.6703 23.6757 16.8997C22.1739 16.1304 20.3401 16.4973 19.25 17.7852" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Подзаголовок</h3>
+          <p>Количество <br> юзеров</p>
+          <span>3 402</span>
+          <div class="numbers__item-img">
+            <svg xmlns="http://www.w3.org/2000/svg" width="162" height="189" viewBox="0 0 162 189" fill="none">
+              <g opacity="0.03">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M157.125 49.5169C162.647 52.6412 166.039 58.4896 166 64.8089V121.989C166 128.34 162.505 134.196 156.864 137.281L103.614 170.802C98.2491 173.733 91.7505 173.733 86.3852 170.802L33.1353 137.281C27.5142 134.225 24.0129 128.364 24 121.989V64.8011C24 58.4503 27.4948 52.602 33.1353 49.5169L86.3852 18.2733C91.9098 15.2422 98.6105 15.2422 104.135 18.2733L157.385 49.5169H157.125Z" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M95 125.96V126.04" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M93.9788 102C101.372 102.022 107.815 96.9578 109.552 89.7582C111.288 82.5585 107.866 75.1057 101.278 71.743C94.7364 68.386 86.7485 69.9871 82 75.6071" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="numbers__item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+            <path d="M6.41699 10.0833L9.16699 12.8333L13.7503 8.25" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.41699 21.0833L9.16699 23.8333L13.7503 19.25" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.41699 32.0833L9.16699 34.8333L13.7503 30.25" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20.167 11H36.667" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20.167 22H36.667" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20.167 33H36.667" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3>Подзаголовок</h3>
+          <p>Количество <br> юзеров</p>
+          <span>3 402</span>
+          <div class="numbers__item-img">
+            <svg xmlns="http://www.w3.org/2000/svg" width="162" height="189" viewBox="0 0 162 189" fill="none">
+              <g opacity="0.03">
+                <path d="M27.5625 43.3125L39.375 55.125L59.0625 35.4375" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M27.5625 90.5625L39.375 102.375L59.0625 82.6875" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M27.5625 137.812L39.375 149.625L59.0625 129.938" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M86.625 47.25H157.5" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M86.625 94.5H157.5" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M86.625 141.75H157.5" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blue">
+    <div class="blue__content">
+      <div class="blue__info">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M35.2237 4.39266C38.5769 2.53578 42.6442 2.53578 45.9973 4.39266L68.6936 17.8325C68.918 17.9671 69.119 18.1151 69.2966 18.2799L69.3234 18.3035L69.6818 18.5592C72.2238 20.4732 73.7973 23.4144 73.9832 26.5995L74 27.2824V51.787C74 55.7399 71.8459 59.3765 68.5629 61.1831L45.7695 75.6557C42.4865 77.4656 38.5134 77.4656 35.0495 75.5481L12.6213 61.2941C9.15999 59.393 7.0053 55.7489 7 51.787V27.2791C6.99689 23.3556 9.11299 19.7392 12.5275 17.8325L35.2237 4.39266ZM31.0591 23.1849H24.3591L23.8566 23.2017C20.5606 23.4504 17.9376 26.0759 17.6792 29.385L17.6591 29.9132V36.6415L17.6758 37.1461C17.9235 40.4561 20.5379 43.0901 23.8331 43.3497L24.3591 43.3699H31.0591V50.0982H24.3591L24.3356 49.7046C24.1263 47.9371 22.5822 46.6392 20.8128 46.7435C19.0433 46.8478 17.6611 48.3182 17.6591 50.0982C17.658 53.6192 20.3603 56.5456 23.8566 56.8097L24.3591 56.8265H31.0591L31.5616 56.8097C34.8576 56.5609 37.4806 53.9355 37.739 50.6264L37.7591 50.0982V29.9132L37.7423 29.4086C37.4946 26.0986 34.8803 23.4646 31.585 23.2051L31.0591 23.1849ZM49.9409 23.1849H56.6409L57.1669 23.2051C60.4621 23.4646 63.0765 26.0986 63.3242 29.4086L63.3409 29.9132V50.0982L63.3208 50.6264C63.0624 53.9355 60.4394 56.5609 57.1434 56.8097L56.6409 56.8265H49.9409L49.4384 56.8097C45.9421 56.5456 43.2398 53.6192 43.2409 50.0982C43.2429 48.3182 44.6252 46.8478 46.3946 46.7435C48.164 46.6392 49.7081 47.9371 49.9175 49.7046L49.9409 50.0982H56.6409V43.3699H49.9409L49.415 43.3497C46.1197 43.0901 43.5054 40.4561 43.2577 37.1461L43.2409 36.6415V29.9132L43.261 29.385C43.5194 26.0759 46.1424 23.4504 49.4384 23.2017L49.9409 23.1849ZM31.0591 29.9132V36.6415H24.3591V29.9132H31.0591ZM56.6409 36.6415V29.9132H49.9409V36.6415H56.6409Z" fill="white"/>
+          <path d="M45.9973 4.39266L46.2521 3.96243C46.248 3.95998 46.2438 3.95758 46.2396 3.95525L45.9973 4.39266ZM35.2237 4.39266L34.9815 3.95525C34.9773 3.95758 34.9731 3.95998 34.969 3.96243L35.2237 4.39266ZM68.6936 17.8325L68.9507 17.4037L68.9484 17.4023L68.6936 17.8325ZM69.2966 18.2799L68.9563 18.6465L68.9666 18.6555L69.2966 18.2799ZM69.3234 18.3035L68.9934 18.6791C69.0061 18.6902 69.0193 18.7007 69.033 18.7105L69.3234 18.3035ZM69.6818 18.5592L69.9827 18.1596L69.9722 18.1521L69.6818 18.5592ZM73.9832 26.5995L74.4831 26.5872C74.483 26.5816 74.4827 26.576 74.4824 26.5704L73.9832 26.5995ZM74 27.2824H74.5001L74.4998 27.2702L74 27.2824ZM68.5629 61.1831L68.3219 60.745C68.3127 60.7501 68.3037 60.7554 68.2949 60.761L68.5629 61.1831ZM45.7695 75.6557L46.0109 76.0936C46.02 76.0886 46.0289 76.0834 46.0376 76.0778L45.7695 75.6557ZM35.0495 75.5481L34.7814 75.9701C34.7899 75.9755 34.7986 75.9806 34.8074 75.9855L35.0495 75.5481ZM12.6213 61.2941L12.8895 60.8721C12.8805 60.8664 12.8713 60.861 12.862 60.8559L12.6213 61.2941ZM7 51.787H6.5L6.5 51.7877L7 51.787ZM7 27.2791H7.5L7.5 27.2787L7 27.2791ZM12.5275 17.8325L12.7714 18.2692L12.7823 18.2627L12.5275 17.8325ZM24.3591 23.1849V22.6849C24.3535 22.6849 24.3479 22.685 24.3424 22.6852L24.3591 23.1849ZM31.0591 23.1849L31.0783 22.6852C31.0719 22.685 31.0655 22.6849 31.0591 22.6849V23.1849ZM23.8566 23.2017L23.8399 22.702C23.8329 22.7022 23.8259 22.7026 23.819 22.7031L23.8566 23.2017ZM17.6792 29.385L17.1807 29.3461C17.1802 29.3527 17.1798 29.3594 17.1796 29.366L17.6792 29.385ZM17.6591 29.9132L17.1595 29.8942C17.1592 29.9005 17.1591 29.9069 17.1591 29.9132H17.6591ZM17.6591 36.6415H17.1591C17.1591 36.6471 17.1592 36.6526 17.1594 36.6581L17.6591 36.6415ZM17.6758 37.1461L17.1761 37.1627C17.1763 37.1697 17.1767 37.1766 17.1772 37.1835L17.6758 37.1461ZM23.8331 43.3497L23.7939 43.8481C23.8006 43.8486 23.8073 43.849 23.814 43.8493L23.8331 43.3497ZM24.3591 43.3699L24.3399 43.8695C24.3463 43.8697 24.3527 43.8699 24.3591 43.8699V43.3699ZM31.0591 43.3699H31.5591C31.5591 43.0937 31.3352 42.8699 31.0591 42.8699V43.3699ZM31.0591 50.0982V50.5982C31.3352 50.5982 31.5591 50.3743 31.5591 50.0982H31.0591ZM24.3591 50.0982L23.86 50.1279C23.8757 50.392 24.0945 50.5982 24.3591 50.5982V50.0982ZM24.3356 49.7046L24.8348 49.6748C24.8342 49.6651 24.8333 49.6554 24.8322 49.6458L24.3356 49.7046ZM20.8128 46.7435L20.8422 47.2427H20.8422L20.8128 46.7435ZM17.6591 50.0982L17.1591 50.0976L17.1591 50.098L17.6591 50.0982ZM23.8566 56.8097L23.8189 57.3083C23.8259 57.3088 23.8329 57.3092 23.8399 57.3094L23.8566 56.8097ZM24.3591 56.8265L24.3424 57.3262C24.3479 57.3264 24.3535 57.3265 24.3591 57.3265V56.8265ZM31.0591 56.8265V57.3265C31.0647 57.3265 31.0702 57.3264 31.0758 57.3262L31.0591 56.8265ZM31.5616 56.8097L31.5783 57.3094C31.5853 57.3092 31.5923 57.3088 31.5992 57.3083L31.5616 56.8097ZM37.739 50.6264L38.2375 50.6653C38.238 50.6586 38.2384 50.652 38.2386 50.6454L37.739 50.6264ZM37.7591 50.0982L38.2587 50.1172C38.259 50.1109 38.2591 50.1045 38.2591 50.0982H37.7591ZM37.7591 29.9132H38.2591C38.2591 29.9077 38.259 29.9021 38.2588 29.8966L37.7591 29.9132ZM37.7423 29.4086L38.2421 29.392C38.2418 29.3851 38.2415 29.3782 38.2409 29.3713L37.7423 29.4086ZM31.585 23.2051L31.6243 22.7066C31.6176 22.7061 31.6109 22.7057 31.6042 22.7054L31.585 23.2051ZM56.6409 23.1849L56.6601 22.6852C56.6537 22.685 56.6473 22.6849 56.6409 22.6849V23.1849ZM49.9409 23.1849V22.6849C49.9353 22.6849 49.9298 22.685 49.9242 22.6852L49.9409 23.1849ZM57.1669 23.2051L57.2061 22.7066C57.1994 22.7061 57.1927 22.7057 57.186 22.7054L57.1669 23.2051ZM63.3242 29.4086L63.8239 29.392C63.8237 29.3851 63.8233 29.3782 63.8228 29.3713L63.3242 29.4086ZM63.3409 29.9132H63.8409C63.8409 29.9077 63.8408 29.9021 63.8406 29.8966L63.3409 29.9132ZM63.3409 50.0982L63.8405 50.1172C63.8408 50.1109 63.8409 50.1045 63.8409 50.0982H63.3409ZM63.3208 50.6264L63.8193 50.6653C63.8198 50.6586 63.8202 50.652 63.8204 50.6454L63.3208 50.6264ZM57.1434 56.8097L57.1601 57.3094C57.1671 57.3092 57.1741 57.3088 57.181 57.3083L57.1434 56.8097ZM56.6409 56.8265V57.3265C56.6465 57.3265 56.6521 57.3264 56.6576 57.3262L56.6409 56.8265ZM49.9409 56.8265L49.9242 57.3262C49.9298 57.3264 49.9353 57.3265 49.9409 57.3265V56.8265ZM49.4384 56.8097L49.4007 57.3083C49.4077 57.3088 49.4147 57.3092 49.4217 57.3094L49.4384 56.8097ZM43.2409 50.0982L42.7409 50.0976V50.098L43.2409 50.0982ZM46.3946 46.7435L46.424 47.2427L46.3946 46.7435ZM49.9175 49.7046L50.4166 49.6748C50.416 49.6651 50.4151 49.6554 50.414 49.6458L49.9175 49.7046ZM49.9409 50.0982L49.4418 50.1279C49.4575 50.392 49.6763 50.5982 49.9409 50.5982V50.0982ZM56.6409 50.0982V50.5982C56.917 50.5982 57.1409 50.3743 57.1409 50.0982H56.6409ZM56.6409 43.3699H57.1409C57.1409 43.0937 56.917 42.8699 56.6409 42.8699V43.3699ZM49.9409 43.3699L49.9217 43.8695C49.9281 43.8697 49.9345 43.8699 49.9409 43.8699V43.3699ZM49.415 43.3497L49.3757 43.8481C49.3824 43.8486 49.3891 43.849 49.3958 43.8493L49.415 43.3497ZM43.2577 37.1461L42.7579 37.1627C42.7582 37.1697 42.7585 37.1766 42.7591 37.1835L43.2577 37.1461ZM43.2409 36.6415H42.7409C42.7409 36.6471 42.741 36.6526 42.7412 36.6581L43.2409 36.6415ZM43.2409 29.9132L42.7413 29.8942C42.741 29.9005 42.7409 29.9069 42.7409 29.9132H43.2409ZM43.261 29.385L42.7625 29.3461C42.762 29.3527 42.7616 29.3594 42.7614 29.366L43.261 29.385ZM49.4384 23.2017L49.4217 22.702C49.4147 22.7022 49.4077 22.7026 49.4008 22.7031L49.4384 23.2017ZM31.0591 36.6415V37.1415C31.3352 37.1415 31.5591 36.9177 31.5591 36.6415H31.0591ZM31.0591 29.9132H31.5591C31.5591 29.6371 31.3352 29.4132 31.0591 29.4132V29.9132ZM24.3591 36.6415H23.8591C23.8591 36.9177 24.0829 37.1415 24.3591 37.1415V36.6415ZM24.3591 29.9132V29.4132C24.0829 29.4132 23.8591 29.6371 23.8591 29.9132H24.3591ZM56.6409 29.9132H57.1409C57.1409 29.6371 56.917 29.4132 56.6409 29.4132V29.9132ZM56.6409 36.6415V37.1415C56.917 37.1415 57.1409 36.9177 57.1409 36.6415H56.6409ZM49.9409 29.9132V29.4132C49.6648 29.4132 49.4409 29.6371 49.4409 29.9132H49.9409ZM49.9409 36.6415H49.4409C49.4409 36.9177 49.6648 37.1415 49.9409 37.1415V36.6415ZM46.2396 3.95525C42.7357 2.01492 38.4854 2.01492 34.9815 3.95525L35.466 4.83007C38.6685 3.05664 42.5526 3.05664 45.7551 4.83007L46.2396 3.95525ZM68.9484 17.4023L46.2521 3.96243L45.7426 4.82289L68.4388 18.2627L68.9484 17.4023ZM69.6368 17.9135C69.4306 17.7221 69.2009 17.5537 68.9507 17.4037L68.4365 18.2613C68.6351 18.3804 68.8075 18.5081 68.9564 18.6463L69.6368 17.9135ZM69.6534 17.9279L69.6266 17.9043L68.9666 18.6555L68.9934 18.6791L69.6534 17.9279ZM69.9722 18.1521L69.6137 17.8964L69.033 18.7105L69.3915 18.9662L69.9722 18.1521ZM74.4824 26.5704C74.2879 23.2391 72.6422 20.1623 69.9826 18.1597L69.3811 18.9586C71.8054 20.784 73.3067 23.5896 73.4841 26.6286L74.4824 26.5704ZM74.4998 27.2702L74.4831 26.5872L73.4834 26.6118L73.5001 27.2947L74.4998 27.2702ZM74.5 51.787V27.2824H73.5V51.787H74.5ZM68.804 61.6212C72.2511 59.7243 74.5 55.9172 74.5 51.787H73.5C73.5 55.5626 71.4408 59.0288 68.3219 60.745L68.804 61.6212ZM46.0376 76.0778L68.831 61.6052L68.2949 60.761L45.5015 75.2336L46.0376 76.0778ZM34.8074 75.9855C38.4174 77.984 42.5731 77.9889 46.0109 76.0936L45.5281 75.2179C42.4 76.9424 38.6095 76.9473 35.2917 75.1106L34.8074 75.9855ZM12.3531 61.7161L34.7814 75.9701L35.3177 75.1261L12.8895 60.8721L12.3531 61.7161ZM6.5 51.7877C6.50554 55.931 8.75893 59.7432 12.3806 61.7324L12.862 60.8559C9.56105 59.0428 7.50506 55.5667 7.5 51.7863L6.5 51.7877ZM6.5 27.2791V51.787H7.5V27.2791H6.5ZM12.2837 17.3959C8.71026 19.3914 6.49675 23.1754 6.5 27.2795L7.5 27.2787C7.49703 23.5359 9.51573 20.087 12.7713 18.269L12.2837 17.3959ZM34.969 3.96243L12.2727 17.4023L12.7823 18.2627L35.4785 4.82289L34.969 3.96243ZM24.3591 23.6849H31.0591V22.6849H24.3591V23.6849ZM23.8733 23.7014L24.3758 23.6846L24.3424 22.6852L23.8399 22.702L23.8733 23.7014ZM18.1777 29.424C18.417 26.3592 20.8457 23.9303 23.8942 23.7003L23.819 22.7031C20.2754 22.9705 17.4582 25.7926 17.1807 29.3461L18.1777 29.424ZM18.1587 29.9322L18.1788 29.404L17.1796 29.366L17.1595 29.8942L18.1587 29.9322ZM18.1591 36.6415V29.9132H17.1591V36.6415H18.1591ZM18.1756 37.1296L18.1588 36.6249L17.1594 36.6581L17.1761 37.1627L18.1756 37.1296ZM23.8724 42.8512C20.8247 42.6112 18.4039 40.1744 18.1744 37.1088L17.1772 37.1835C17.4432 40.7378 20.2512 43.5691 23.7939 43.8481L23.8724 42.8512ZM24.3783 42.8702L23.8523 42.85L23.814 43.8493L24.3399 43.8695L24.3783 42.8702ZM31.0591 42.8699H24.3591V43.8699H31.0591V42.8699ZM31.5591 50.0982V43.3699H30.5591V50.0982H31.5591ZM24.3591 50.5982H31.0591V49.5982H24.3591V50.5982ZM23.8365 49.7343L23.86 50.1279L24.8582 50.0684L24.8348 49.6748L23.8365 49.7343ZM20.8422 47.2427C22.3456 47.154 23.6607 48.257 23.8391 49.7634L24.8322 49.6458C24.5919 47.6172 22.8188 46.1244 20.7833 46.2444L20.8422 47.2427ZM18.1591 50.0987C18.1608 48.5815 19.3386 47.3313 20.8422 47.2427L20.7833 46.2444C18.7481 46.3644 17.1613 48.055 17.1591 50.0976L18.1591 50.0987ZM23.8942 56.3111C20.6605 56.0669 18.1581 53.3595 18.1591 50.0983L17.1591 50.098C17.1579 53.8789 20.06 57.0244 23.8189 57.3083L23.8942 56.3111ZM24.3758 56.3268L23.8733 56.31L23.8399 57.3094L24.3424 57.3262L24.3758 56.3268ZM31.0591 56.3265H24.3591V57.3265H31.0591V56.3265ZM31.5449 56.31L31.0424 56.3268L31.0758 57.3262L31.5783 57.3094L31.5449 56.31ZM37.2405 50.5874C37.0012 53.6522 34.5725 56.081 31.524 56.3111L31.5992 57.3083C35.1428 57.0408 37.9599 54.2188 38.2375 50.6653L37.2405 50.5874ZM37.2595 50.0792L37.2394 50.6073L38.2386 50.6454L38.2587 50.1172L37.2595 50.0792ZM37.2591 29.9132V50.0982H38.2591V29.9132H37.2591ZM37.2426 29.4252L37.2594 29.9298L38.2588 29.8966L38.2421 29.392L37.2426 29.4252ZM31.5458 23.7035C34.5935 23.9436 37.0143 26.3803 37.2437 29.4459L38.2409 29.3713C37.975 25.8169 35.167 22.9856 31.6243 22.7066L31.5458 23.7035ZM31.0399 23.6845L31.5659 23.7047L31.6042 22.7054L31.0783 22.6852L31.0399 23.6845ZM56.6409 22.6849H49.9409V23.6849H56.6409V22.6849ZM57.186 22.7054L56.6601 22.6852L56.6217 23.6845L57.1477 23.7047L57.186 22.7054ZM63.8228 29.3713C63.5568 25.8169 60.7488 22.9856 57.2061 22.7066L57.1276 23.7035C60.1753 23.9436 62.5961 26.3803 62.8256 29.4459L63.8228 29.3713ZM63.8406 29.8966L63.8239 29.392L62.8244 29.4252L62.8412 29.9298L63.8406 29.8966ZM63.8409 50.0982V29.9132H62.8409V50.0982H63.8409ZM63.8204 50.6454L63.8405 50.1172L62.8413 50.0792L62.8212 50.6073L63.8204 50.6454ZM57.181 57.3083C60.7246 57.0408 63.5418 54.2188 63.8193 50.6653L62.8223 50.5874C62.583 53.6522 60.1543 56.081 57.1058 56.3111L57.181 57.3083ZM56.6576 57.3262L57.1601 57.3094L57.1267 56.31L56.6242 56.3268L56.6576 57.3262ZM49.9409 57.3265H56.6409V56.3265H49.9409V57.3265ZM49.4217 57.3094L49.9242 57.3262L49.9576 56.3268L49.4551 56.31L49.4217 57.3094ZM42.7409 50.098C42.7397 53.8789 45.6418 57.0244 49.4007 57.3083L49.4761 56.3111C46.2424 56.0669 43.7399 53.3595 43.7409 50.0983L42.7409 50.098ZM46.3652 46.2444C44.3299 46.3644 42.7432 48.055 42.7409 50.0976L43.7409 50.0987C43.7426 48.5815 44.9204 47.3313 46.424 47.2427L46.3652 46.2444ZM50.414 49.6458C50.1737 47.6172 48.4006 46.1244 46.3652 46.2444L46.424 47.2427C47.9274 47.154 49.2425 48.257 49.4209 49.7634L50.414 49.6458ZM50.44 50.0684L50.4166 49.6748L49.4183 49.7343L49.4418 50.1279L50.44 50.0684ZM56.6409 49.5982H49.9409V50.5982H56.6409V49.5982ZM56.1409 43.3699V50.0982H57.1409V43.3699H56.1409ZM49.9409 43.8699H56.6409V42.8699H49.9409V43.8699ZM49.3958 43.8493L49.9217 43.8695L49.9601 42.8702L49.4341 42.85L49.3958 43.8493ZM42.7591 37.1835C43.025 40.7378 45.833 43.5691 49.3757 43.8481L49.4542 42.8512C46.4065 42.6112 43.9857 40.1744 43.7563 37.1088L42.7591 37.1835ZM42.7412 36.6581L42.7579 37.1627L43.7574 37.1296L43.7406 36.6249L42.7412 36.6581ZM42.7409 29.9132V36.6415H43.7409V29.9132H42.7409ZM42.7614 29.366L42.7413 29.8942L43.7405 29.9322L43.7606 29.404L42.7614 29.366ZM49.4008 22.7031C45.8572 22.9705 43.04 25.7926 42.7625 29.3461L43.7595 29.424C43.9988 26.3592 46.4275 23.9303 49.476 23.7003L49.4008 22.7031ZM49.9242 22.6852L49.4217 22.702L49.4551 23.7014L49.9576 23.6846L49.9242 22.6852ZM31.5591 36.6415V29.9132H30.5591V36.6415H31.5591ZM24.3591 37.1415H31.0591V36.1415H24.3591V37.1415ZM23.8591 29.9132V36.6415H24.8591V29.9132H23.8591ZM31.0591 29.4132H24.3591V30.4132H31.0591V29.4132ZM56.1409 29.9132V36.6415H57.1409V29.9132H56.1409ZM49.9409 30.4132H56.6409V29.4132H49.9409V30.4132ZM50.4409 36.6415V29.9132H49.4409V36.6415H50.4409ZM56.6409 36.1415H49.9409V37.1415H56.6409V36.1415Z" fill="white"/>
+        </svg>
+        <h2>Осталось 99 мест <br> Успейте преобрести</h2>
+      </div>
+      <div class="blue__button">
+        <a href="#">Оставить заявку</a>
+      </div>
+    </div>
+    <div class="blue__image _ibg">
+      <img src="images/blue-img.png" alt="img">
+    </div>
+  </section>
+
+  <section class="tests">
+    <div class="tests__content _container">
+      <div class="title">
+        <h2>Тесты</h2>
+      </div>
+      <div class="tests__items">
+        <div class="tests__item">
+          <img src="images/tests-photo-1.png" alt="test photo">
+          <div class="tests__item-block">
+            <h3>Числовой тест</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+          <div class="tests__button">
+            <a href="#">Пройти пробный тест</a>
+          </div>
+        </div>
+        <div class="tests__item">
+          <img src="images/tests-photo-2.png" alt="test photo">
+          <div class="tests__item-block">
+            <h3>Вербальный тест</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+          <div class="tests__button">
+            <a href="#">Пройти пробный тест</a>
+          </div>
+        </div>
+        <div class="tests__item">
+          <img src="images/tests-photo-3.png" alt="test photo">
+          <div class="tests__item-block">
+            <h3>Логический тест</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+          <div class="tests__button">
+            <a href="#">Пройти пробный тест</a>
+          </div>
+        </div>
+        <div class="tests__item">
+          <img src="images/tests-photo-4.png" alt="test photo">
+          <div class="tests__item-block">
+            <h3>Ситуационный тест</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          </div>
+          <div class="tests__button">
+            <a href="#">Пройти пробный тест</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="package">
+    <div class="package__content _container">
+      <div class="title">
+        <h2>Пакеты</h2>
+      </div>
+      <div class="package__items">
+        <div class="package__item">
+          <div class="package__item-number">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+              <path d="M26.0625 3.53492C28.5649 2.15503 31.6001 2.15503 34.1025 3.53492L51.04 13.5224C51.2075 13.6224 51.3575 13.7324 51.49 13.8549L51.51 13.8724L51.7775 14.0624C53.6745 15.4848 54.8487 17.6705 54.9875 20.0374L55 20.5449V38.7549C55 41.6924 53.3925 44.3949 50.9425 45.7374L33.9325 56.4924C31.4825 57.8374 28.5175 57.8374 25.9325 56.4124L9.195 45.8199C6.61193 44.4072 5.00396 41.6991 5 38.7549V20.5424C4.99768 17.6268 6.57686 14.9393 9.125 13.5224L26.0625 3.53492Z" fill="#03A5CA"/>
+            </svg>
+            <span>1</span>
+          </div>
+          <h3>Basic</h3>
+          <div class="package__item-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <path d="M5.2085 12.5001L10.4168 17.7084L20.8335 7.29175" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>Lorem ipsum lorem ipsum</p>
+          </div>
+          <div class="package__item-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <path d="M5.2085 12.5001L10.4168 17.7084L20.8335 7.29175" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>Lorem ipsum lorem ipsum</p>
+          </div>
+          <div class="package__item-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <path d="M5.2085 12.5001L10.4168 17.7084L20.8335 7.29175" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>Lorem ipsum lorem ipsum</p>
+          </div>
+          <div class="package__item-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <path d="M5.2085 12.5001L10.4168 17.7084L20.8335 7.29175" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>Lorem ipsum lorem ipsum</p>
+          </div>
+          <span>10 000 т</span>
+          <div class="package__item-button">
+            <a href="#">Купить доступ</a>
+          </div>
+        </div>
+        <div class="package__item">
+          <div class="package__item-number">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+              <path d="M26.0625 3.53492C28.5649 2.15503 31.6001 2.15503 34.1025 3.53492L51.04 13.5224C51.2075 13.6224 51.3575 13.7324 51.49 13.8549L51.51 13.8724L51.7775 14.0624C53.6745 15.4848 54.8487 17.6705 54.9875 20.0374L55 20.5449V38.7549C55 41.6924 53.3925 44.3949 50.9425 45.7374L33.9325 56.4924C31.4825 57.8374 28.5175 57.8374 25.9325 56.4124L9.195 45.8199C6.61193 44.4072 5.00396 41.6991 5 38.7549V20.5424C4.99768 17.6268 6.57686 14.9393 9.125 13.5224L26.0625 3.53492Z" fill="#03A5CA"/>
+            </svg>
+            <span>2</span>
+          </div>
+          <h3>Standart</h3>
+          <div class="package__item-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <path d="M5.2085 12.5001L10.4168 17.7084L20.8335 7.29175" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>Lorem ipsum lorem ipsum</p>
+          </div>
+          <div class="package__item-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <path d="M5.2085 12.5001L10.4168 17.7084L20.8335 7.29175" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>Lorem ipsum lorem ipsum</p>
+          </div>
+          <div class="package__item-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <path d="M5.2085 12.5001L10.4168 17.7084L20.8335 7.29175" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>Lorem ipsum lorem ipsum</p>
+          </div>
+          <div class="package__item-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <path d="M5.2085 12.5001L10.4168 17.7084L20.8335 7.29175" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>Lorem ipsum lorem ipsum</p>
+          </div>
+          <span>10 000 т</span>
+          <div class="package__item-button">
+            <a href="#">Купить доступ</a>
+          </div>
+        </div>
+        <div class="package__item">
+          <div class="package__item-number">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+              <path d="M26.0625 3.53492C28.5649 2.15503 31.6001 2.15503 34.1025 3.53492L51.04 13.5224C51.2075 13.6224 51.3575 13.7324 51.49 13.8549L51.51 13.8724L51.7775 14.0624C53.6745 15.4848 54.8487 17.6705 54.9875 20.0374L55 20.5449V38.7549C55 41.6924 53.3925 44.3949 50.9425 45.7374L33.9325 56.4924C31.4825 57.8374 28.5175 57.8374 25.9325 56.4124L9.195 45.8199C6.61193 44.4072 5.00396 41.6991 5 38.7549V20.5424C4.99768 17.6268 6.57686 14.9393 9.125 13.5224L26.0625 3.53492Z" fill="#03A5CA"/>
+            </svg>
+            <span>3</span>
+          </div>
+          <h3>Enterprise</h3>
+          <div class="package__item-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <path d="M5.2085 12.5001L10.4168 17.7084L20.8335 7.29175" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>Lorem ipsum lorem ipsum</p>
+          </div>
+          <div class="package__item-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <path d="M5.2085 12.5001L10.4168 17.7084L20.8335 7.29175" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>Lorem ipsum lorem ipsum</p>
+          </div>
+          <div class="package__item-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <path d="M5.2085 12.5001L10.4168 17.7084L20.8335 7.29175" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>Lorem ipsum lorem ipsum</p>
+          </div>
+          <div class="package__item-text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+              <path d="M5.2085 12.5001L10.4168 17.7084L20.8335 7.29175" stroke="#03A5CA" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>Lorem ipsum lorem ipsum</p>
+          </div>
+          <span>10 000 т</span>
+          <div class="package__item-button">
+            <a href="#">Купить доступ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video">
+    <div class="video__content">
+      <div class="title">
+        <h2>Посмотрите, что KomekTest может сделать для вас</h2>
+      </div>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <div class="video__item">
+        <video poster="images/video-img.png" controls>
+          <source src="images/test-video.mp4" type="video/mp4">
+        </video>
+      </div>
+  </section>
+
+  <section class="reviews">
+    <div class="reviews__content">
+      <div class="title">
+        <h2>Отзывы</h2>
+      </div>
+      <div class="reviews__slider">
+        <div class="reviews__item-wrapper">
+          <div class="reviews__item">
+            <img src="images/reviews-icon1.png" alt="icon">
+            <h3>Username</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+              has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
+          </div>
+        </div>
+        <div class="reviews__item-wrapper">
+          <div class="reviews__item">
+            <img src="images/reviews-icon2.png" alt="icon">
+            <h3>Username</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+              has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
+          </div>
+        </div>
+        <div class="reviews__item-wrapper">
+          <div class="reviews__item">
+            <img src="images/reviews-icon3.png" alt="icon">
+            <h3>Username</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+          </div>
+        </div>
+        <div class="reviews__item-wrapper">
+          <div class="reviews__item">
+            <img src="images/reviews-icon3.png" alt="icon">
+            <h3>Username</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blue">
+    <div class="blue__content">
+      <div class="blue__info blue__info--mod">
+        <h2>Вы еще сомневаетесь <br> в преоберетении?</h2>
+      </div>
+      <div class="blue__btn">
+        <a href="#">Пройти пробный тест</a>
+      </div>
+    </div>
+    <div class="blue__image _ibg">
+      <img src="images/blue-img2.png" alt="img">
+    </div>
+  </section>
+
+  <section class="questions">
+    <div class="questions__content">
+      <div class="title">
+        <h2>Часто задаваемые вопросы</h2>
+      </div>
+      <div class="accordion__wrapper">
+        <div class="accordion">
+          <div class="accordion__title" data-tab="tab-1">
+            <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry?</h3>
+            <span></span>
+          </div>
+          <div class="accordion__content" id="tab-1">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion__title" data-tab="tab-2">
+            <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry?</h3>
+            <span></span>
+          </div>
+          <div class="accordion__content" id="tab-2">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion__title" data-tab="tab-3">
+            <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry?</h3>
+            <span></span>
+          </div>
+          <div class="accordion__content" id="tab-3">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion__title" data-tab="tab-4">
+            <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry?</h3>
+            <span></span>
+          </div>
+          <div class="accordion__content" id="tab-4">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion__title" data-tab="tab-5">
+            <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry?</h3>
+            <span></span>
+          </div>
+          <div class="accordion__content" id="tab-5">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+  <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__body _container">
+          <div class="footer__logo">
+            <a href="index.html" class="logo logo__footer">
+              <img src="images/logo-footer.svg" alt="footer logo">
+              komektest
+            </a>
+            <p>Сделано в КЗ/Made in KZ</p>
+          </div>
+            <div class="footer__box">
+              <nav class="footer__nav">
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="index.html">Главная</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">Вербальные тесты</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">Числовые тесты</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">Логические тесты</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#">Ситуационные тесты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__box">
+              <nav class="footer__nav">
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="prices.html">Наши цены</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="qr.html">Способы оплаты</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="blog.html">Блог</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="aboutus.html">О нас</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__contacts">
+              <h3>Наши контакты</h3>
+              <a href="mailto:komektest@gmail.com">komektest@gmail.com</a>
+              <div class="footer__social">
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                    <circle cx="13.5" cy="13.5" r="12.5" stroke="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2469 20.8865H11.4756V14.3516H10.0908V12.0999H11.4756V10.7481C11.4756 8.91122 12.2571 7.81836 14.4789 7.81836H16.3281V10.0709H15.1724C14.3074 10.0709 14.2503 10.3856 14.2503 10.9728L14.2465 12.0999H16.3408L16.0957 14.3516H14.2465V20.8865H14.2469Z" fill="white"/>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                    <circle cx="13.5" cy="13.7896" r="12.5" stroke="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9543 10.2742C10.9382 10.4948 10.9355 12.0532 10.9516 12.0798C10.9638 12.0997 11.692 12.1087 11.7612 12.0898C11.7918 12.0816 11.7941 12.0126 11.7941 10.9837V9.88671L11.8493 9.71079C11.8799 9.61426 11.9563 9.36076 12.0197 9.1474C12.0677 8.98544 12.1235 8.79941 12.1606 8.67558C12.1725 8.63593 12.1824 8.60266 12.1896 8.57859C12.4643 7.6805 12.7268 6.79639 12.7336 6.74632L12.7421 6.68452L12.3578 6.68227C12.0103 6.68047 11.9042 6.68227 11.8947 6.69129C11.8902 6.69535 11.7702 7.15229 11.5567 7.98046C11.4547 8.37516 11.3688 8.69046 11.3661 8.68144C11.3637 8.67384 11.2918 8.40821 11.1925 8.04137C11.162 7.9288 11.129 7.8067 11.0946 7.6796C10.9485 7.13786 10.8262 6.69219 10.8226 6.68858C10.8172 6.68317 10.352 6.68092 9.97481 6.68407C9.96614 6.68415 9.95808 6.68153 9.95293 6.68431C9.92551 6.69908 9.98037 6.86653 10.4621 8.40402C10.5412 8.65663 10.6599 9.01478 10.7255 9.19927C10.9278 9.76853 10.9755 9.99136 10.9543 10.2742ZM10.058 14.6168L10.0486 16.9187L10.0391 19.2205L9.66559 19.2255C9.37744 19.2295 9.29023 19.225 9.28349 19.2065C9.27855 19.1934 9.27225 18.1551 9.27 16.8997L9.26506 14.6168L8.8452 14.6123L8.42534 14.6069V14.2474V13.8874L9.66604 13.8924L10.9076 13.8974L10.913 14.2524L10.918 14.6069L10.4882 14.6123L10.058 14.6168ZM17.2401 16.1018C17.2168 16.1789 17.1925 16.7107 17.21 16.7567C17.2195 16.782 17.2725 16.7861 17.5912 16.7861H17.9621L17.9558 16.45C17.9495 16.1415 17.9454 16.1058 17.9045 16.0224C17.8398 15.8907 17.7436 15.832 17.5921 15.832C17.4101 15.832 17.2945 15.9204 17.2401 16.1018ZM18.6116 18.534C18.5168 18.8854 18.2655 19.1344 17.9023 19.2368C17.4123 19.3739 16.8733 19.1483 16.658 18.7167C16.5375 18.474 16.5335 18.4257 16.5335 17.2407C16.5335 16.2745 16.5371 16.1564 16.5676 16.0246C16.6544 15.6512 16.8706 15.4098 17.2365 15.2759C17.7216 15.0986 18.3055 15.3228 18.5163 15.7671C18.6269 16.0016 18.6404 16.1018 18.6521 16.7622L18.6615 17.354L17.9373 17.3594L17.2132 17.3639L17.2078 17.7617C17.2001 18.3229 17.2374 18.4956 17.3885 18.598C17.5152 18.6837 17.7103 18.677 17.8164 18.5836C17.9162 18.4956 17.9445 18.4014 17.9544 18.1267L17.963 17.8849H18.3132H18.6629L18.6521 18.1546C18.6458 18.303 18.6274 18.474 18.6116 18.534ZM15.1314 18.4244C15.1085 18.4898 15.0792 18.5317 15.0347 18.5619C14.9215 18.6377 14.7574 18.6138 14.6077 18.4992L14.5416 18.4487V17.2407V16.0328L14.6081 15.9822C14.8104 15.8271 15.0312 15.8442 15.1188 16.0215C15.153 16.091 15.1552 16.1532 15.1593 17.2123C15.1633 18.2286 15.1606 18.3382 15.1314 18.4244ZM15.776 18.9467C15.7162 19.0807 15.5832 19.2119 15.473 19.244C15.188 19.3288 14.9592 19.2602 14.6949 19.0108C14.6126 18.9332 14.5362 18.87 14.525 18.87C14.511 18.87 14.5039 18.9305 14.5039 19.05V19.23H14.164H13.8242V16.5587V13.8879H14.164H14.5039V14.7594C14.5039 15.2384 14.5106 15.6309 14.5178 15.6309C14.5259 15.6309 14.5974 15.5673 14.6774 15.4901C14.8612 15.3119 15.0145 15.2344 15.2092 15.219C15.5571 15.1929 15.7639 15.3719 15.8587 15.782C15.8879 15.9101 15.8915 16.0562 15.8915 17.2407C15.8915 18.6837 15.8911 18.6901 15.776 18.9467ZM12.2854 18.9278C12.151 19.0649 11.9914 19.1759 11.8557 19.2264C11.5743 19.3324 11.3073 19.2706 11.1931 19.0739C11.0888 18.8939 11.087 18.8533 11.087 16.9854V15.2709H11.4259H11.7658L11.7707 16.8857C11.7761 18.4722 11.777 18.502 11.8148 18.566C11.8647 18.6522 11.942 18.6756 12.0634 18.6418C12.1353 18.6219 12.1838 18.5868 12.2998 18.4708L12.4464 18.3251V16.7978V15.2709H12.7862H13.1261V17.2502V19.23H12.7862H12.4464V19.0216C12.4464 18.8646 12.4401 18.8132 12.4221 18.8132C12.4086 18.8132 12.347 18.8646 12.2854 18.9278ZM10.9832 20.8512C11.1805 20.8584 11.7028 20.8705 12.1443 20.8782C13.064 20.8945 14.7551 20.885 15.7216 20.8579C16.3721 20.8394 17.5579 20.7916 17.7791 20.7745C17.8416 20.7695 17.9859 20.7605 18.1001 20.7537C18.4844 20.7321 18.7285 20.6513 18.9573 20.4704C19.2545 20.2363 19.4837 19.8042 19.5808 19.2972C19.673 18.8177 19.7346 17.9634 19.7467 16.9936C19.7575 16.183 19.7431 15.7454 19.6851 15.0436C19.6109 14.1567 19.5529 13.869 19.3704 13.4995C19.129 13.0101 18.7802 12.7521 18.2835 12.6953C17.8996 12.6515 16.4548 12.5893 15.1175 12.5595C12.8024 12.5081 8.99669 12.6073 8.5103 12.7322C8.28599 12.79 8.11742 12.8874 7.9421 13.0629C7.63507 13.3696 7.45211 13.8094 7.37839 14.4184C7.21072 15.8077 7.20712 17.487 7.3685 18.9269C7.43818 19.5462 7.58203 19.9486 7.85085 20.2801C8.01897 20.4871 8.30846 20.6631 8.56739 20.7154C8.749 20.7524 9.6584 20.8033 10.9832 20.8512ZM15.9189 12.1457C15.7292 12.1204 15.6182 12.0469 15.5422 11.8958C15.4469 11.7063 15.4469 11.7073 15.4469 9.8195V8.05805H15.8299H16.2125L16.2205 9.68192C16.2291 11.4456 16.2268 11.4046 16.332 11.4312C16.4287 11.4551 16.5357 11.4032 16.6687 11.267L16.7964 11.1366L16.8013 9.59712L16.8058 8.05805L17.1884 8.05264L17.5709 8.04813V10.064V12.0803L17.5188 12.0911C17.4563 12.1042 16.8764 12.1033 16.8297 12.0898C16.8013 12.0821 16.7968 12.0559 16.7968 11.8981V11.7149L16.6881 11.8214C16.4381 12.0654 16.1684 12.1791 15.9189 12.1457ZM13.9913 11.3757C14.1226 11.2756 14.1235 11.267 14.1302 10.1334C14.1361 9.2525 14.1329 9.10274 14.1064 8.98275C14.0705 8.82037 14.0075 8.74368 13.8844 8.70985C13.7252 8.66745 13.5796 8.75857 13.5283 8.93314C13.4897 9.06756 13.4901 11.0658 13.5292 11.2002C13.5589 11.3013 13.6537 11.4118 13.7239 11.4271C13.8151 11.4465 13.9271 11.4249 13.9918 11.3757H13.9913ZM13.6915 12.1448C13.349 12.1033 13.0343 11.9012 12.8828 11.6252C12.7286 11.3441 12.7142 11.1971 12.7232 9.95933C12.7304 9.0008 12.7331 8.9408 12.7709 8.80323C12.8612 8.4762 13.0361 8.25337 13.3072 8.11849C13.6794 7.934 14.0808 7.95791 14.4319 8.18615C14.6557 8.33095 14.7915 8.54115 14.8643 8.85375C14.8962 8.99178 14.8994 9.09778 14.8994 10.0658C14.8994 11.2431 14.894 11.3112 14.7735 11.5661C14.658 11.8119 14.3964 12.0284 14.1235 12.1046C14.003 12.1376 13.794 12.1574 13.6915 12.1448Z" fill="white"/>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                    <circle cx="13.5" cy="13.5" r="12.5" stroke="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.66699 10.9072C7.66699 9.11771 9.1182 7.6665 10.9077 7.6665H16.0929C17.8825 7.6665 19.3337 9.11771 19.3337 10.9072V16.0924C19.3337 17.882 17.8825 19.3332 16.0929 19.3332H10.9077C9.1182 19.3332 7.66699 17.882 7.66699 16.0924V10.9072ZM18.0374 9.61095C18.0374 9.25317 17.747 8.9628 17.3892 8.9628C17.0314 8.9628 16.7411 9.25317 16.7411 9.61095C16.7411 9.96873 17.0314 10.2591 17.3892 10.2591C17.747 10.2591 18.0374 9.96873 18.0374 9.61095ZM13.5003 10.2591C15.2899 10.2591 16.7411 11.7103 16.7411 13.4998C16.7411 15.2894 15.2899 16.7406 13.5003 16.7406C11.7108 16.7406 10.2596 15.2894 10.2596 13.4998C10.2596 11.7103 11.7108 10.2591 13.5003 10.2591ZM11.5559 13.4998C11.5559 12.426 12.4264 11.5554 13.5003 11.5554C14.5742 11.5554 15.4448 12.426 15.4448 13.4998C15.4448 14.5737 14.5742 15.4443 13.5003 15.4443C12.4264 15.4443 11.5559 14.5737 11.5559 13.4998Z" fill="white"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+          <p>Все права заащищены 2023</p>
+        </div>
+      </div>
+  </footer>
+  <div class="popup" id="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a class="popup__close close-popup" href="#header">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="12" fill="#EBEDF0"/>
+            <path d="M8.4 8.4L15.6 15.6" stroke="#A0A1A3" stroke-width="2" stroke-linecap="round"/>
+            <path d="M15.6 8.4L8.4 15.6" stroke="#A0A1A3" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <h2 class="popup__title">Войти</h2>
+        <div class="popup__block">
+          <p>Новый пользователь?</p>
+          <a class="popup-link" href="#popup-reg">Создать учетную запись</a>
+        </div>
+        <form class="form" method="post" name="form">
+          <label>
+            <span>Email</span>
+            <input class="form__input-email" type="email" name="email" required>
+          </label>
+          <label>
+            <span>Password</span>
+            <input class="form__input-email" type="password" name="password" required>
+          </label>
+          <div class="popup__block popup__block--mod">
+            <a class="popup-link" href="#popup-recover">Забыли пароль?</a>
+            <a class="popup-link" href="#popup-change-password">Изменить пароль</a>
+          </div>
+          <button class="form__input-button send-form" type="submit">Войти</button>
+        </form>
+        <div class="popup__checkbox">
+          <label>
+            <input class="checkbox" type="checkbox" name="coding-notes" checked>
+            <span class="custom-checkbox"></span>
+            Запомнить меня на этом компьютере
+          </label>
+          <label>
+            <input class="checkbox" type="checkbox" name="coding-notes" checked>
+            <span class="custom-checkbox"></span>
+            Галочка о конфиденциальности
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popup" id="popup-reg">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a class="popup__close close-popup" href="#header">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="12" fill="#EBEDF0"/>
+            <path d="M8.4 8.4L15.6 15.6" stroke="#A0A1A3" stroke-width="2" stroke-linecap="round"/>
+            <path d="M15.6 8.4L8.4 15.6" stroke="#A0A1A3" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <h2 class="popup__title">Регистрация</h2>
+        <form class="form" method="post" name="form">
+          <label>
+            <span>Email</span>
+            <input class="form__input-email" type="email" name="email" required>
+          </label>
+          <label>
+            <span>Пароль</span>
+            <input class="form__input-email" type="password" name="password" required>
+          </label>
+          <label>
+            <span>Потверждение пароля</span>
+            <input class="form__input-email" type="password" name="password" required>
+          </label>
+          <div class="form__captcha">
+            <img src="images/captcha.png" alt="captcha">
+          </div>
+          <button class="form__input-button send-form" type="submit">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="popup" id="popup-recover">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a class="popup__close close-popup" href="#header">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="12" fill="#EBEDF0"/>
+            <path d="M8.4 8.4L15.6 15.6" stroke="#A0A1A3" stroke-width="2" stroke-linecap="round"/>
+            <path d="M15.6 8.4L8.4 15.6" stroke="#A0A1A3" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <h2 class="popup__title">Забыли пароль?</h2>
+        <form class="form" method="post" name="form">
+          <label>
+            <span>Email</span>
+            <input class="form__input-email" type="email" name="email" required>
+          </label>
+          <button class="form__input-button send-form" type="submit">Восстановить пароль</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="popup" id="popup-change-password">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a class="popup__close close-popup" href="#header">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="12" fill="#EBEDF0"/>
+            <path d="M8.4 8.4L15.6 15.6" stroke="#A0A1A3" stroke-width="2" stroke-linecap="round"/>
+            <path d="M15.6 8.4L8.4 15.6" stroke="#A0A1A3" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <h2 class="popup__title">Войти</h2>
+        <div class="popup__block">
+          <p>Новый пользователь?</p>
+          <a class="popup-link" href="#popup-reg">Создать учетную запись</a>
+        </div>
+        <form class="form" method="post" name="form">
+          <label>
+            <span>Новый пароль</span>
+            <input class="form__input-email" type="password" name="password" required>
+          </label>
+          <label>
+            <span>Повторите пароль</span>
+            <input class="form__input-email" type="password" name="password" required>
+          </label>
+          <button class="form__input-button send-form" type="submit">Изменить пароль</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+  </div>
+</body>
+
+</html>
